@@ -1,5 +1,13 @@
+html, body{
+  height: 100%;
+  background-color: #fffef8;
+}
+
+#root, #root > div{
+  height:100%;
+}
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -8,15 +16,8 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0px;
 }
 
 .App-link {
@@ -30,4 +31,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.wrapper{
+  padding:30px;
+  height: 100%;
+}
+textarea{
+  width:100%;
+  height: 100%;
+  padding: 0px;
+  outline: none;
+  resize: none;
+  border-right: solid 1px #e1e1e1;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-size: 20px;
+  font-family: Courier;
+  background-color: #fffef8;
+
+}
+textarea:focus{
+  border: 0px;
+}
+.hidden{
+  display:none;
+}
+.show{
+  display: block;
 }

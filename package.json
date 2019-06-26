@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "file-saver": "^2.0.2",
+    "gh-pages": "^2.0.1",
+    "markdown-it": "^8.4.2",
+    "mousetrap": "^1.6.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-hotkeys": "^2.0.0-pre8",
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://samberic.github.io/focus.md"
 }
